@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
         {
             score += num;
         }
-        scoreText.text = "Score: " + score.ToString();
+        score = Mathf.Clamp(score, -999999999, 999999999);
+        scoreText.text = "Score: " + score.ToString("N0");
     }
 }
