@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 23930386}
   - component: {fileID: 23930385}
   m_Layer: 5
-  m_Name: Background
+  m_Name: Background Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 1568042528}
   - component: {fileID: 1568042527}
   m_Layer: 5
-  m_Name: Image
+  m_Name: PNG Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1526,7 +1526,7 @@ GameObject:
   - component: {fileID: 1685546298}
   - component: {fileID: 1685546297}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 1741917211}
   - component: {fileID: 1741917210}
   m_Layer: 5
-  m_Name: Image
+  m_Name: JPG Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8862fec535535dc4da63cdddb6304440, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc182d85561065f4b9425a6da169f7f5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
