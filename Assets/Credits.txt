@@ -1,2 +1,5 @@
 IMAGE The Great Wave Off Kanagawa(Fugaku sanjurokkei) src: https://collectionapi.metmuseum.org/api/collection/v1/iiif/45434/134438/main-image (License not found)
 IMAGE GitHub Logo(Simon Oxley) src: https://cdn-icons-png.flaticon.com/512/25/25231.png (License not found)
+IMAGE White Sun Outline Clip Art(Lewis McLaren) src: https://www.clker.com/cliparts/Z/U/V/P/o/Z/white-sun-outline-hi.png (License not found)
+IMAGE Dime clipart(Creazilla) src: https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868220/dime-clipart-md.png (License open source)
+FONT Super Cosmic(fsuarez913) src: https://www.dafont.com/super-cosmic.font (License Personal Use)
