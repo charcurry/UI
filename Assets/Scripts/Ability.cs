@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Ability : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Ability : MonoBehaviour
     public Image abilityRadial;
     public Sprite abilityColor;
     public Sprite abilityGrey;
+
+    public TMP_InputField chatBox;
 
     public TextMeshProUGUI timerText;
 
@@ -29,9 +32,12 @@ public class Ability : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(key) && timeRemaining == 0)
+        if (!chatBox.isFocused)
         {
-            UseAbility();
+            if (Input.GetKeyDown(key) && timeRemaining == 0)
+            {
+                UseAbility();
+            }
         }
 
         if (timeRemaining > 0)
