@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class Ability : MonoBehaviour
     public Sprite abilityColor;
     public Sprite abilityGrey;
 
+    public TextMeshProUGUI timerText;
+
     float timeRemaining;
     public float maxCountDownTime;
 
@@ -19,6 +22,7 @@ public class Ability : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timerText.text = "";
         ability = GetComponent<Image>();
     }
 
@@ -32,6 +36,7 @@ public class Ability : MonoBehaviour
 
         if (timeRemaining > 0)
         {
+            timerText.text = timeRemaining.ToString("N0");
             timeRemaining -= Time.deltaTime;
             abilityRadial.fillAmount = timeRemaining / maxCountDownTime;
         }
@@ -44,13 +49,17 @@ public class Ability : MonoBehaviour
     public void RefreshAbility()
     {
         ability.sprite = abilityColor;
+        timerText.text = "";
         timeRemaining = 0;
     }
 
     public void UseAbility()
     {
-        ability.sprite = abilityGrey;
-        abilityRadial.fillAmount = 1;
-        timeRemaining = maxCountDownTime;
+        if (timeRemaining == 0)
+        {
+            ability.sprite = abilityGrey;
+            abilityRadial.fillAmount = 1;
+            timeRemaining = maxCountDownTime;
+        }
     }
 }
