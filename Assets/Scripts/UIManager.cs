@@ -14,6 +14,9 @@ public class UIManager : MonoBehaviour
     public Slider blue;
     public Slider alpha;
 
+    public Image healthBar;
+    public float health;
+    public float maxHealth;
 
     public TextMeshProUGUI showHideButtonText;
     public GameObject coin;
@@ -83,5 +86,12 @@ public class UIManager : MonoBehaviour
             showHideButtonText.text = "Show";
             coin.SetActive(false);
         }
+    }
+
+    public void UpdateHealth(int healthChange)
+    {
+        health += healthChange;
+        health = Mathf.Clamp(health, 0, maxHealth);
+        healthBar.fillAmount = health / maxHealth;
     }
 }
