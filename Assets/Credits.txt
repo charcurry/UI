@@ -2,4 +2,5 @@ IMAGE The Great Wave Off Kanagawa(Fugaku sanjurokkei) src: https://collectionapi
 IMAGE GitHub Logo(Simon Oxley) src: https://cdn-icons-png.flaticon.com/512/25/25231.png (License not found)
 IMAGE White Sun Outline Clip Art(Lewis McLaren) src: https://www.clker.com/cliparts/Z/U/V/P/o/Z/white-sun-outline-hi.png (License not found)
 IMAGE Dime clipart(Creazilla) src: https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868220/dime-clipart-md.png (License open source)
+IMAGE(S) Blood_Hunt, Eternal_Hunger, Infinite_Duress, Jaws_of_the_Beast, Primal_Howl(Riot Games) src: https://leagueoflegends.fandom.com/wiki/Warwick/LoL (License not found)  
 FONT Super Cosmic(fsuarez913) src: https://www.dafont.com/super-cosmic.font (License Personal Use)

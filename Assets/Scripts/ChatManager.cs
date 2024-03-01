@@ -16,13 +16,13 @@ public class ChatManager : MonoBehaviour
     public GameObject textObject;
     public GameObject chatBox;
 
-    string userName;
+    //string userName;
     [SerializeField] private List<Message> messageList = new List<Message>();
 
     // Start is called before the first frame update
     void Start()
     {
-        userName = Environment.UserName;
+        //userName = Environment.UserName;
     }
 
     // Update is called once per frame
@@ -32,7 +32,8 @@ public class ChatManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                SendMessageToChat(userName + ": " + chatInput.text);
+                //SendMessageToChat(userName + ": " + chatInput.text);
+                SendMessageToChat(chatInput.text);
                 chatInput.text = "";
                 if (keepChatOpen)
                 {
