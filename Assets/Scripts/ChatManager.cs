@@ -9,6 +9,8 @@ public class ChatManager : MonoBehaviour
 {
     public int maxMessages;
 
+    public bool keepChatOpen;
+
     public TMP_InputField chatInput;
 
     public GameObject textObject;
@@ -32,20 +34,15 @@ public class ChatManager : MonoBehaviour
             {
                 SendMessageToChat(userName + ": " + chatInput.text);
                 chatInput.text = "";
-                chatInput.ActivateInputField();
+                if (keepChatOpen)
+                {
+                    chatInput.ActivateInputField();
+                }
             }
         }
         else if (!chatInput.isFocused && Input.GetKeyDown(KeyCode.Return))
         {
             chatInput.ActivateInputField();
-        }
-
-        if (!chatInput.isFocused)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                //SendMessageToChat(userName);
-            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
