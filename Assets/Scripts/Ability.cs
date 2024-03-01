@@ -7,6 +7,9 @@ using System;
 
 public class Ability : MonoBehaviour
 {
+    public bool reactivate;
+
+    float reactivateTimer = 1;
 
     Image ability;
     public Image abilityRadial;
@@ -42,9 +45,18 @@ public class Ability : MonoBehaviour
 
         if (timeRemaining > 0)
         {
-            timerText.text = timeRemaining.ToString("N0");
-            timeRemaining -= Time.deltaTime;
-            abilityRadial.fillAmount = timeRemaining / maxCountDownTime;
+            if (timeRemaining < 1)
+            {
+                timerText.text = timeRemaining.ToString("N1");
+                timeRemaining -= Time.deltaTime;
+                abilityRadial.fillAmount = timeRemaining / maxCountDownTime;
+            }
+            else
+            {
+                timerText.text = timeRemaining.ToString("N0");
+                timeRemaining -= Time.deltaTime;
+                abilityRadial.fillAmount = timeRemaining / maxCountDownTime;
+            }
         }
         else
         {

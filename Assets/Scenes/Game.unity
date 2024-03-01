@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eef9ef05a392dd4d8bdae5ac877e7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactivate: 0
   abilityRadial: {fileID: 1473105969}
   abilityColor: {fileID: 21300000, guid: 9affbaa7b1ff892428bcb55ff6096385, type: 3}
   abilityGrey: {fileID: 21300000, guid: 75fdaccc63a9d074688ea6bdbfd1412b, type: 3}
@@ -1434,7 +1435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -5}
+  m_AnchoredPosition: {x: 85, y: -5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784026095
@@ -1522,7 +1523,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 172.2941, w: -1.0562067}
+  m_margin: {x: -19.54377, y: 0, z: 151.47423, w: -1.0562067}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3167,7 +3168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -5}
+  m_AnchoredPosition: {x: 70, y: -5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702682516
@@ -3253,7 +3254,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 147.8437, w: -1.1663198}
+  m_margin: {x: 0, y: 0, z: 133.10258, w: -1.1663198}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3359,6 +3360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eef9ef05a392dd4d8bdae5ac877e7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactivate: 0
   abilityRadial: {fileID: 20981889}
   abilityColor: {fileID: 21300000, guid: a57d83ba19ec1ec4eb766442bce3c430, type: 3}
   abilityGrey: {fileID: 21300000, guid: e7a5a7df9bac44d45a492b1218065766, type: 3}
@@ -3831,6 +3833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eef9ef05a392dd4d8bdae5ac877e7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactivate: 0
   abilityRadial: {fileID: 1532489853}
   abilityColor: {fileID: 21300000, guid: be50baabb2f298940a1ca62db9900982, type: 3}
   abilityGrey: {fileID: 21300000, guid: 07817158166a02449a1ecc9ceb662c54, type: 3}
@@ -4120,6 +4123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eef9ef05a392dd4d8bdae5ac877e7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactivate: 0
   abilityRadial: {fileID: 1182625735}
   abilityColor: {fileID: 21300000, guid: 950eab3a1daf8924793e8112251187e6, type: 3}
   abilityGrey: {fileID: 21300000, guid: ba722423c4cb7cd4b89910c7d593b2b0, type: 3}
