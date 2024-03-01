@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 884332281}
   m_HandleRect: {fileID: 884332280}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3498,6 +3498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMessages: 25
+  keepChatOpen: 1
   chatInput: {fileID: 491181683}
   textObject: {fileID: 8920187839274551476, guid: 5c4caf401da078442944ceac7752d652, type: 3}
   chatBox: {fileID: 1271365743}
