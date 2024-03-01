@@ -7,14 +7,18 @@ using System;
 
 public class Ability : MonoBehaviour
 {
-    public bool reactivate;
+    //public bool reactivate;
 
-    float reactivateTimer = 1;
+    //float reactivateTimer = 1;
+
+    //bool recast = false;
 
     Image ability;
     public Image abilityRadial;
-    public Sprite abilityColor;
-    public Sprite abilityGrey;
+    public Sprite[] abilitiesColor;
+    Sprite abilityColor;
+    Sprite abilityGrey;
+    public Sprite[] abilitiesGrey;
 
     public TMP_InputField chatBox;
 
@@ -28,6 +32,9 @@ public class Ability : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        abilityColor = abilitiesColor[0]; 
+        abilityGrey = abilitiesGrey[0];
+
         timerText.text = "";
         ability = GetComponent<Image>();
     }
@@ -42,6 +49,17 @@ public class Ability : MonoBehaviour
                 UseAbility();
             }
         }
+
+        //if (recast)
+        //{
+        //    abilityColor = abilitiesColor[1];
+        //    abilityGrey = abilitiesGrey[1];
+        //}
+        //else
+        //{
+        //    abilityColor = abilitiesColor[0];
+        //    abilityGrey = abilitiesGrey[0];
+        //}
 
         if (timeRemaining > 0)
         {
